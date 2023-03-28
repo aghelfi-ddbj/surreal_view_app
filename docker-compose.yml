@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  surreal:
+    build: .
+    container_name: surreal
+    ports:
+      - "3201:3201"
+    volumes:
+      - .:/usr/local/src/app
+    command: ["R", "-e", "shiny::runApp('R/surrealViewApp.R', port = 3201, host='0.0.0.0')"]
+

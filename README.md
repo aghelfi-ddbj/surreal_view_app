@@ -14,18 +14,21 @@ Surreal_view is a tool that compares BioProject, BioSample, DRR, taxon, and sequ
 
 To build the APP container, run the following command:
 
-```bash
+```
+cd front_end
 docker build . -t ghelfi/surreal_view_app_light
 
 ```
 ### 2. Build the ShinyProxy container
 To build the ShinyProxy container, run the following command:
 ```
+cd surrealnet
 docker build . -t ghelfi/shinyproxy-surrealview
 ```
 ### 3. Build the container with volume (mock_data)
 To build the container with the mock_data volume, run the following command:
 ```
+cd docker_volumes
 docker build . -t ghelfi/mock_volume
 ```
 Deploying surreal_view_app_light

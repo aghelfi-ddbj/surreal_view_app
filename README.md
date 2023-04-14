@@ -31,7 +31,7 @@ To build the container with the mock_data volume, run the following command:
 cd docker_volumes
 docker build . -t ghelfi/mock_volume
 ```
-Deploying surreal_view_app_light
+## Deploying surreal_view_app_light
 ### 1. Pull containers from [DockerHub](https://hub.docker.com/r/ghelfi/surreal_view) 
 ```
 docker pull ghelfi/surreal_view_app_light:latest
